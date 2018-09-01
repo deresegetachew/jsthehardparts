@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start":"",
-    "build":"",
+    "build":"babel src -w -d build --source-maps inline",
     "test":""
   },
   "devDependencies": {
