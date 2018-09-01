@@ -1,10 +1,12 @@
 {
   "scripts": {
-    "start":"",
-    "build":"babel src -w -d build --source-maps inline",
-    "test":""
+    "start": "npm run build/index.js",
+    "build": "babel src -w -d build --source-maps inline",
+    "test": "mocha  --require @babel/register --watch --watch-extensions js,coffee js ./test/**/*.js"
+
   },
   "devDependencies": {
+    "@babel/register": "^7.0.0",
     "chai": "^4.1.2",
     "mocha": "^5.2.0"
   },
