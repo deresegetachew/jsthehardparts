@@ -1,2 +1,10 @@
 "use strict";
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZXNDb250ZW50IjpbXX0=
+
+var _callBackAndHighOrderFunctions = require("./callBackAndHighOrderFunctions");
+
+//import {} from './Closures Scope and Execution Context';
+(0, _callBackAndHighOrderFunctions.mapWith)([1, 2, 3], function (num) {
+  num = num * 2;
+  console.log(num);
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NyYy9pbmRleC5qcyJdLCJuYW1lcyI6WyJudW0iLCJjb25zb2xlIiwibG9nIl0sIm1hcHBpbmdzIjoiOztBQUFBOztBQUNBO0FBRUEsNENBQVEsQ0FBQyxDQUFELEVBQUcsQ0FBSCxFQUFLLENBQUwsQ0FBUixFQUFnQixVQUFDQSxHQUFELEVBQU87QUFBQ0EsRUFBQUEsR0FBRyxHQUFJQSxHQUFHLEdBQUcsQ0FBYjtBQUFnQkMsRUFBQUEsT0FBTyxDQUFDQyxHQUFSLENBQVlGLEdBQVo7QUFBa0IsQ0FBMUQiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge2FkZFR3byAsIGFkZFMsIG1hcCwgZm9yRWFjaCAsIG1hcFdpdGh9IGZyb20gJy4vY2FsbEJhY2tBbmRIaWdoT3JkZXJGdW5jdGlvbnMnO1xuLy9pbXBvcnQge30gZnJvbSAnLi9DbG9zdXJlcyBTY29wZSBhbmQgRXhlY3V0aW9uIENvbnRleHQnO1xuXG5tYXBXaXRoKFsxLDIsM10sKG51bSk9PntudW0gPSAgbnVtICogMjsgY29uc29sZS5sb2cobnVtKTt9KTsiXX0=

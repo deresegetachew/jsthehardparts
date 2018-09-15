@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "npm run build/index.js",
+    "start": "node build/index.js",
     "build": "babel src -w -d build --source-maps inline",
     "test": "mocha  --require @babel/register --watch --watch-extensions js,coffee js ./test/**/*.js"
 
