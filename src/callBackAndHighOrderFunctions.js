@@ -45,7 +45,6 @@ export function reduce(array, cb, initialValue) {
 
 }
 
-
 export function intersection(arg) {
 	let paramArr = [];
 	let arr = [];
@@ -69,7 +68,6 @@ export function intersection(arg) {
 
 	return reduce(Object.assign(arr, paramArr), cb, []);
 }
-
 
 export function union(arg) {
 	let paramArr = [];
@@ -106,3 +104,4 @@ export function multiMap(arrValues,arrCb){
 	});
 	return result;
 }
+
