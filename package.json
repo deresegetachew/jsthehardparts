@@ -2,14 +2,15 @@
   "scripts": {
     "start": "node build/index.js",
     "build": "babel src -w -d build --source-maps inline",
-    "test": "mocha  --require @babel/register --watch --watch-extensions js,coffee js ./test/**/*.js",
-    "coverage":"nyc mocha"
+    "test": "mocha  --require @babel/register --watch --watch-extensions js,coffee js ./test/**/*.js --reporter mochawesome",
+    "coverage": "nyc mocha"
   },
   "devDependencies": {
     "@babel/register": "^7.0.0",
     "babel-plugin-istanbul": "^5.0.1",
     "chai": "^4.1.2",
     "mocha": "^5.2.0",
+    "mochawesome": "^3.0.3",
     "nyc": "^13.0.1"
   },
   "dependencies": {
@@ -18,9 +19,9 @@
     "@babel/polyfill": "^7.0.0",
     "@babel/preset-env": "^7.0.0"
   },
-  "nyc":{
-    "check-coverage":true,
-    "cache":true,
+  "nyc": {
+    "check-coverage": true,
+    "cache": true,
     "require": [
       "@babel/register",
       "@babel/polyfill"
@@ -29,10 +30,10 @@
       "html",
       "text"
     ],
-    "include":["**/src/**"],
+    "include": [
+      "**/src/**"
+    ],
     "sourceMap": false,
     "instrument": false
   }
 }
-
-

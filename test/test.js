@@ -4,6 +4,8 @@ import  {
         mapWith,reduce,intersection,
         union,objectOfMatches,multiMap
         } from '../src/callBackAndHighOrderFunctions';
+import {createFunction} from '../src/Closures Scope and Execution Context';
+
 
 
 describe('CallBack and High Order Functions',function(){
@@ -246,5 +248,16 @@ describe('CallBack and High Order Functions',function(){
 });
 
 
-// console.log(multiMap(['catfood', 'glue', 'beer'], [function(str) { return str.toUpperCase(); }, function(str) { return str[0].toUpperCase() + str.slice(1).toLowerCase(); }, function(str) { return str + str; }]));
-// should log: { catfood: ['CATFOOD', 'Catfood', 'catfoodcatfood'], glue: ['GLUE', 'Glue', 'glueglue'], beer: ['BEER', 'Beer', 'beerbeer'] }
+describe('Clousers, Scope and Execution Contenxt',function(){
+    describe(`Create a function createFunction that creates and returns a function.
+              When that created function is called, it should print "hello".`,function(){
+                it(`prints hello`,function(){
+                    //ARRANGE
+                    let fun  =  createFunction();
+                    //ACT
+                    expect(fun()).to.eql('hello');
+                    //ASERT
+
+                });
+              });
+})
