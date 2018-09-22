@@ -3,3 +3,4 @@
 .nyc_output
 .vscode
 /mochaawesome-report/*
+/build/*
