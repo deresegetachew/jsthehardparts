@@ -1,14 +1,14 @@
 {
   "stats": {
-    "suites": 13,
-    "tests": 17,
-    "passes": 17,
+    "suites": 18,
+    "tests": 22,
+    "passes": 22,
     "pending": 0,
     "failures": 0,
-    "start": "2018-09-22T16:20:05.986Z",
-    "end": "2018-09-22T16:20:06.010Z",
-    "duration": 24,
-    "testsRegistered": 17,
+    "start": "2018-09-23T11:10:20.694Z",
+    "end": "2018-09-23T11:10:20.706Z",
+    "duration": 12,
+    "testsRegistered": 22,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -19,7 +19,7 @@
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "9c18fd08-74ce-47f1-ab33-b5a311806c50",
+    "uuid": "4d852c53-eb4e-40a3-9188-3180294d2b77",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,7 +28,7 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "0588b439-3d78-4657-9ef0-5a8c7bc400ea",
+        "uuid": "c099fca4-83bb-44e8-8080-9c612b7a7a69",
         "title": "CallBack and High Order Functions",
         "fullFile": "/Users/derese/Documents/webprojects/study/javaScriptTheHardParts/test/test.js",
         "file": "/test/test.js",
@@ -37,7 +37,7 @@
         "tests": [],
         "suites": [
           {
-            "uuid": "0093e828-538b-4c90-8299-201135f61342",
+            "uuid": "79ecf4a6-9ebd-4191-9326-827a89b05942",
             "title": "Challange 1: function addTwo accepts one input and adds 2 to it.",
             "fullFile": "/Users/derese/Documents/webprojects/study/javaScriptTheHardParts/test/test.js",
             "file": "/test/test.js",
@@ -48,7 +48,7 @@
                 "title": "expect 2+1 = 3",
                 "fullTitle": "CallBack and High Order Functions Challange 1: function addTwo accepts one input and adds 2 to it. expect 2+1 = 3",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -57,25 +57,25 @@
                 "code": "//Arrange\nvar param = 1;\nvar sum = param + 2; //ACT\nvar result = (0, _callBackAndHighOrderFunctions.addTwo)(param); //ASSERT\nexpect(result).to.be.equal(4);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "98d3be4b-1416-44fc-950c-79de8ecad4b3",
+                "uuid": "e4fc84a8-2990-4cd5-a730-4a93dbc39072",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "98d3be4b-1416-44fc-950c-79de8ecad4b3"
+              "e4fc84a8-2990-4cd5-a730-4a93dbc39072"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 1,
+            "duration": 0,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "0968cf16-5636-4bb2-b7d9-826be89f16dd",
+            "uuid": "df733b7f-5b7f-48bb-afdc-1146ee3a83b4",
             "title": "Challange 2: a function addS that accepts one input and adds an 'S' to it.",
             "fullFile": "/Users/derese/Documents/webprojects/study/javaScriptTheHardParts/test/test.js",
             "file": "/test/test.js",
@@ -95,14 +95,14 @@
                 "code": "//Arrange\nvar initial = \"pizza\"; //Act\nvar result = (0, _callBackAndHighOrderFunctions.addS)(initial); //ASSERT\nexpect(result).to.equal('pizzas');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "3e030ddd-cabc-4e3a-aa93-63d3f5ff515a",
+                "uuid": "923fe613-b414-45dc-9ee7-7eba276d4f95",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "3e030ddd-cabc-4e3a-aa93-63d3f5ff515a"
+              "923fe613-b414-45dc-9ee7-7eba276d4f95"
             ],
             "failures": [],
             "pending": [],
@@ -113,7 +113,7 @@
             "_timeout": 2000
           },
           {
-            "uuid": "57c96d40-04c7-47b8-9e62-76565d84156b",
+            "uuid": "cc51e63e-91ba-4d31-8ff1-264bc3a20bf2",
             "title": "Challange 3: a function called map takes an array of numbers and\n            a callback function which is applied to each element of the array.\n            map returns a new array with the result of using the callback on each element",
             "fullFile": "/Users/derese/Documents/webprojects/study/javaScriptTheHardParts/test/test.js",
             "file": "/test/test.js",
@@ -133,7 +133,7 @@
                 "code": "//Arrange\nvar param1 = [];\nvar multiplyBy2 = function multiplyBy2(num) {\n  return num * 2;\n}; //ACT\n\nvar result = (0, _callBackAndHighOrderFunctions.map)(param1, multiplyBy2); //ASSERT\nexpect(result).to.not.equal(param1);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "e1aea3ca-aeae-49dc-a349-0e1c9119c53c",
+                "uuid": "60b55314-7f5f-4437-99f7-c0f1e7eb069f",
                 "isHook": false,
                 "skipped": false
               },
@@ -141,7 +141,7 @@
                 "title": "input of [1,2,3,4,5] should be [2,4,6,8,10] when the callback is multiplyByTwo",
                 "fullTitle": "CallBack and High Order Functions Challange 3: a function called map takes an array of numbers and\n            a callback function which is applied to each element of the array.\n            map returns a new array with the result of using the callback on each element input of [1,2,3,4,5] should be [2,4,6,8,10] when the callback is multiplyByTwo",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -150,53 +150,15 @@
                 "code": "//Arrange\nvar param = [1, 2, 3, 4, 5];\nvar multiplyBy2 = function multiplyBy2(num) {\n  return num * 2;\n}; //ACT\n\nvar result = (0, _callBackAndHighOrderFunctions.map)(param, multiplyBy2); //ASSERT\nexpect(result).to.be.eql([2, 4, 6, 8, 10]);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "e84d5e99-90c1-44df-b96b-fd5a207dbe03",
+                "uuid": "e16034f8-ddfe-41a8-bb13-f881350c2f92",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "e1aea3ca-aeae-49dc-a349-0e1c9119c53c",
-              "e84d5e99-90c1-44df-b96b-fd5a207dbe03"
-            ],
-            "failures": [],
-            "pending": [],
-            "skipped": [],
-            "duration": 1,
-            "root": false,
-            "rootEmpty": false,
-            "_timeout": 2000
-          },
-          {
-            "uuid": "b3eca80e-ed9b-4649-a9b7-39ba67ff5fc9",
-            "title": "Challange 4:The function forEach takes an array and a callback,\n                and runs the callback on each element of the array.\n                forEach does not return anything.",
-            "fullFile": "/Users/derese/Documents/webprojects/study/javaScriptTheHardParts/test/test.js",
-            "file": "/test/test.js",
-            "beforeHooks": [],
-            "afterHooks": [],
-            "tests": [
-              {
-                "title": "input of [a,b,c,d] should be 'abcd'",
-                "fullTitle": "CallBack and High Order Functions Challange 4:The function forEach takes an array and a callback,\n                and runs the callback on each element of the array.\n                forEach does not return anything. input of [a,b,c,d] should be 'abcd'",
-                "timedOut": false,
-                "duration": 0,
-                "state": "passed",
-                "speed": "fast",
-                "pass": true,
-                "fail": false,
-                "pending": false,
-                "code": "//Arrange\nvar param = ['a', 'b', 'c', 'd'];\nvar result = \"\";\nvar cb = function cb(val) {\n  result = result + val;\n}; //Act\n\n(0, _callBackAndHighOrderFunctions.forEach)(param, cb); //ASSERT\nexpect(result).to.be.equal('abcd');",
-                "err": {},
-                "isRoot": false,
-                "uuid": "e47ae32d-88b4-4547-9c00-d449c1823a95",
-                "isHook": false,
-                "skipped": false
-              }
-            ],
-            "suites": [],
-            "passes": [
-              "e47ae32d-88b4-4547-9c00-d449c1823a95"
+              "60b55314-7f5f-4437-99f7-c0f1e7eb069f",
+              "e16034f8-ddfe-41a8-bb13-f881350c2f92"
             ],
             "failures": [],
             "pending": [],
@@ -207,7 +169,45 @@
             "_timeout": 2000
           },
           {
-            "uuid": "f3a8033b-8d77-4044-b419-85f5485d88b5",
+            "uuid": "752043d7-3bb8-4d34-a45b-cd9d05660189",
+            "title": "Challange 4:The function forEach takes an array and a callback,\n                and runs the callback on each element of the array.\n                forEach does not return anything.",
+            "fullFile": "/Users/derese/Documents/webprojects/study/javaScriptTheHardParts/test/test.js",
+            "file": "/test/test.js",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "input of [a,b,c,d] should be 'abcd'",
+                "fullTitle": "CallBack and High Order Functions Challange 4:The function forEach takes an array and a callback,\n                and runs the callback on each element of the array.\n                forEach does not return anything. input of [a,b,c,d] should be 'abcd'",
+                "timedOut": false,
+                "duration": 1,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "//Arrange\nvar param = ['a', 'b', 'c', 'd'];\nvar result = \"\";\nvar cb = function cb(val) {\n  result = result + val;\n}; //Act\n\n(0, _callBackAndHighOrderFunctions.forEach)(param, cb); //ASSERT\nexpect(result).to.be.equal('abcd');",
+                "err": {},
+                "isRoot": false,
+                "uuid": "afb4c5d8-3a78-4f0b-941c-92f1605b8faf",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "afb4c5d8-3a78-4f0b-941c-92f1605b8faf"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 1,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          },
+          {
+            "uuid": "87044613-88d5-46ff-900a-8f2f7f0791c9",
             "title": "Extension 1: rebuild map as mapWith. This time you're going to use\n        forEach inside of mapWith instead of using a for loop.",
             "fullFile": "/Users/derese/Documents/webprojects/study/javaScriptTheHardParts/test/test.js",
             "file": "/test/test.js",
@@ -227,7 +227,7 @@
                 "code": "//ARRANGE\nvar param1 = [];\nvar multiplyByTwo = function multiplyByTwo(num) {\n  num = num * 2;\n}; //ACT\n\nvar result = (0, _callBackAndHighOrderFunctions.mapWith)(param1, multiplyByTwo); //ASSERT\nexpect(result).to.not.equal(param1); // strict equal ; memory reference",
                 "err": {},
                 "isRoot": false,
-                "uuid": "f986a69d-7d22-4258-ac3c-ebbafc4b8f86",
+                "uuid": "3c724ed2-2e24-4668-baeb-50c968eeca4c",
                 "isHook": false,
                 "skipped": false
               },
@@ -235,7 +235,7 @@
                 "title": "input of [a,b,c,d] should be abcde when the callback is multiplyByTwo",
                 "fullTitle": "CallBack and High Order Functions Extension 1: rebuild map as mapWith. This time you're going to use\n        forEach inside of mapWith instead of using a for loop. input of [a,b,c,d] should be abcde when the callback is multiplyByTwo",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -244,26 +244,26 @@
                 "code": "//ARRANGE\nvar param1 = [{\n  val: 'a'\n}, {\n  val: 'b'\n}, {\n  val: 'c'\n}, {\n  val: 'd'\n}];\nvar cb = function cb(obj) {\n  obj.val = obj.val + 's';\n}; //ACT\n\nvar result = (0, _callBackAndHighOrderFunctions.mapWith)(param1, cb); //ASSERT\nexpect(result).to.eql([{\n  val: 'as'\n}, {\n  val: 'bs'\n}, {\n  val: 'cs'\n}, {\n  val: 'ds'\n}]); // deep equal values",
                 "err": {},
                 "isRoot": false,
-                "uuid": "47d45e57-7bc8-48e8-b104-638fcde596d8",
+                "uuid": "621ca368-823a-4928-9fca-a8dc62c50fbe",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "f986a69d-7d22-4258-ac3c-ebbafc4b8f86",
-              "47d45e57-7bc8-48e8-b104-638fcde596d8"
+              "3c724ed2-2e24-4668-baeb-50c968eeca4c",
+              "621ca368-823a-4928-9fca-a8dc62c50fbe"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 0,
+            "duration": 1,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "20d5f5ee-7fcc-4a22-92e8-dcef4266bd1e",
+            "uuid": "4508c990-7579-41bd-9560-e4c613de70b9",
             "title": "Extension 2 :The function reduce takes an array and reduces the elements to a single value.\n            For example it can sum all the numbers, multiply them,\n            or any operation that you can put into a function.",
             "fullFile": "/Users/derese/Documents/webprojects/study/javaScriptTheHardParts/test/test.js",
             "file": "/test/test.js",
@@ -274,7 +274,7 @@
                 "title": "must have an initial value",
                 "fullTitle": "CallBack and High Order Functions Extension 2 :The function reduce takes an array and reduces the elements to a single value.\n            For example it can sum all the numbers, multiply them,\n            or any operation that you can put into a function. must have an initial value",
                 "timedOut": false,
-                "duration": 2,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -283,7 +283,7 @@
                 "code": "//ARRANGE\nvar arr = [1, 2, 3, 4];\nvar cb = function cb(num) {\n  return num * 2;\n}; //ACT & ASSERT\n\nexpect(function () {\n  return (0, _callBackAndHighOrderFunctions.reduce)(arr, cb);\n}).to.throw(Error, \"initial value not defined\");",
                 "err": {},
                 "isRoot": false,
-                "uuid": "cbab70af-a81c-4774-92ae-47d67ee0b693",
+                "uuid": "e3497564-8055-4a2b-a47e-340e6f4d3f10",
                 "isHook": false,
                 "skipped": false
               },
@@ -300,26 +300,26 @@
                 "code": "//ARRANGE\nvar arr = [1, 2, 3];\nvar initialValue = 0;\nvar cb = function cb(a, b) {\n  return a + b;\n}; //ACT\n\nvar result = (0, _callBackAndHighOrderFunctions.reduce)(arr, cb, initialValue); //ASSERT\nexpect(result).to.eql(6);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "3aaa96dc-60d4-4f89-81a5-58ea60941c20",
+                "uuid": "9b884bba-6b6b-4b84-a7fd-03d78bd60b1b",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "cbab70af-a81c-4774-92ae-47d67ee0b693",
-              "3aaa96dc-60d4-4f89-81a5-58ea60941c20"
+              "e3497564-8055-4a2b-a47e-340e6f4d3f10",
+              "9b884bba-6b6b-4b84-a7fd-03d78bd60b1b"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 2,
+            "duration": 0,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "8e983bf2-fcd1-4685-873d-6617b2000a49",
+            "uuid": "93695a48-6996-436f-a54c-298fc0fd68a7",
             "title": "Extension 3 : Construct a function intersection that compares input arrays and returns\n             a new array with elements found in all of the inputs. BONUS: Use reduce!",
             "fullFile": "/Users/derese/Documents/webprojects/study/javaScriptTheHardParts/test/test.js",
             "file": "/test/test.js",
@@ -330,7 +330,7 @@
                 "title": "Intersection of [1,2,3] , [2,3,4,5] ,[1,3,2,4,5] returns [2,3]",
                 "fullTitle": "CallBack and High Order Functions Extension 3 : Construct a function intersection that compares input arrays and returns\n             a new array with elements found in all of the inputs. BONUS: Use reduce! Intersection of [1,2,3] , [2,3,4,5] ,[1,3,2,4,5] returns [2,3]",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -339,25 +339,25 @@
                 "code": "//Arrange\nvar param1 = [1, 2, 3];\nvar param2 = [2, 3, 4, 5];\nvar param3 = [1, 3, 2, 4, 5]; //ACT\nvar arr = (0, _callBackAndHighOrderFunctions.intersection)(param1, param2, param3); //ASSERT\nexpect(arr).to.eql([2, 3]);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "e78d713c-7d81-4e32-b94c-a5d7a6cab198",
+                "uuid": "38fa9269-682f-4fa2-a186-ab05a89ecff6",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "e78d713c-7d81-4e32-b94c-a5d7a6cab198"
+              "38fa9269-682f-4fa2-a186-ab05a89ecff6"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 1,
+            "duration": 0,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "89b6afec-10db-420b-9ca3-efd66d41bc6f",
+            "uuid": "f6d516ad-9bf6-447c-97dc-6ab907b9ebc8",
             "title": "Extension 4: Construct a function union that compares input arrays and returns a new array that contains all elements.\n              If there are duplicate elements, only add it once to the new array.\n              Preserve the order of the elements starting from the first element of the first input array. BONUS: Use reduce!",
             "fullFile": "/Users/derese/Documents/webprojects/study/javaScriptTheHardParts/test/test.js",
             "file": "/test/test.js",
@@ -368,7 +368,7 @@
                 "title": "returned array should be a new array",
                 "fullTitle": "CallBack and High Order Functions Extension 4: Construct a function union that compares input arrays and returns a new array that contains all elements.\n              If there are duplicate elements, only add it once to the new array.\n              Preserve the order of the elements starting from the first element of the first input array. BONUS: Use reduce! returned array should be a new array",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -377,7 +377,7 @@
                 "code": "//Arrage\nvar param1 = []; //ACT\nvar result = (0, _callBackAndHighOrderFunctions.union)(param1); //ASSERt\nexpect(param1).to.not.equal(result);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "3835147a-eb7b-49b3-afbf-5b983b930932",
+                "uuid": "6ad60e00-8349-4b1c-ac59-6fae76e44356",
                 "isHook": false,
                 "skipped": false
               },
@@ -394,7 +394,7 @@
                 "code": "//Arrage\nvar param1 = [1, 2, 3];\nvar param2 = [2, 0, 3, 4, 5];\nvar param3 = [0, 2, 3]; //ACT\nvar result = (0, _callBackAndHighOrderFunctions.union)(param1, param2, param3); //ASSERT\nexpect(result).to.be.eql([1, 2, 3, 0, 4, 5]);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "fdc6cfe8-42b9-4771-90b9-f967a40c575d",
+                "uuid": "167a1287-f1e5-45e9-a2ff-a827c127d218",
                 "isHook": false,
                 "skipped": false
               },
@@ -411,7 +411,7 @@
                 "code": "//Arrage\nvar param1 = [1, 4, 4];\nvar param2 = [3, 4, 5, 0]; //ACT\nvar result = (0, _callBackAndHighOrderFunctions.union)(param1, param2); //ASSERT\nexpect(result).to.be.eql([1, 4, 3, 5, 0]);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "9f4568af-1d5a-4631-b353-63ef0ad9842f",
+                "uuid": "44aa5593-d18f-43b9-a15b-25da87382e17",
                 "isHook": false,
                 "skipped": false
               },
@@ -428,28 +428,28 @@
                 "code": "//Arrange\nvar param1 = [1, 4, 4];\nvar param2 = [2, 4]; //ACT\nvar result = (0, _callBackAndHighOrderFunctions.union)(param1, param2); //ASSERT\nexpect(result).to.be.eql([1, 4, 2]);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "d0ebf396-c956-4703-aa88-55b36177f884",
+                "uuid": "675a9ded-f68e-4dd0-89cc-0c15ab35ea54",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "3835147a-eb7b-49b3-afbf-5b983b930932",
-              "fdc6cfe8-42b9-4771-90b9-f967a40c575d",
-              "9f4568af-1d5a-4631-b353-63ef0ad9842f",
-              "d0ebf396-c956-4703-aa88-55b36177f884"
+              "6ad60e00-8349-4b1c-ac59-6fae76e44356",
+              "167a1287-f1e5-45e9-a2ff-a827c127d218",
+              "44aa5593-d18f-43b9-a15b-25da87382e17",
+              "675a9ded-f68e-4dd0-89cc-0c15ab35ea54"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 1,
+            "duration": 0,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
           },
           {
-            "uuid": "9a5c433f-982d-40be-9db0-36fdf1ad9872",
+            "uuid": "d95fd299-8ea1-4eac-bdc5-0a03a854f3e3",
             "title": "Extension 5 :A Function objOfMatches accepts two arrays and a callback.\n             objOfMatches will build an object and return it. To build the object, objOfMatches will\n             test each element of the first array using the callback to see if the output matches the corresponding element (by index)\n              of the second array. If there is a match, the element from the first array becomes a key in an object,\n             and the element from the second array becomes the corresponding value.",
             "fullFile": "/Users/derese/Documents/webprojects/study/javaScriptTheHardParts/test/test.js",
             "file": "/test/test.js",
@@ -469,14 +469,14 @@
                 "code": "//ARRANGE\nvar arr1 = ['hi', 'howdy', 'bye', 'later', 'hello'];\nvar arr2 = ['HI', 'Howdy', 'BYE', 'LATER', 'hello'];\nvar cb = function cb(val, initialValue) {\n  var indexU = arr2.indexOf(val.toUpperCase());\n  if (indexU > -1) {\n    if (indexU > -1 && indexU == arr1.indexOf(val)) {\n      initialValue[val] = arr2[indexU];\n    }\n  }\n  return initialValue;\n}; //ACT\n\nvar result = (0, _callBackAndHighOrderFunctions.objectOfMatches)(arr1, arr2, cb); //ASSERT\nexpect(result).to.eql({\n  hi: 'HI',\n  bye: 'BYE',\n  later: 'LATER'\n});",
                 "err": {},
                 "isRoot": false,
-                "uuid": "d33f249b-772a-47a4-8cb6-d8bd886ce7ca",
+                "uuid": "5d795863-bb8c-456e-80cd-eded29c1f0be",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "d33f249b-772a-47a4-8cb6-d8bd886ce7ca"
+              "5d795863-bb8c-456e-80cd-eded29c1f0be"
             ],
             "failures": [],
             "pending": [],
@@ -487,7 +487,7 @@
             "_timeout": 2000
           },
           {
-            "uuid": "e0ec826c-a058-49bc-8f8c-40b2b567f9ce",
+            "uuid": "15d2b49e-b846-4e08-bb62-c50a38a8c663",
             "title": "Extension 6: a function multiMap  will accept two arrays: an array of values and an array of callbacks.\n                    multiMap will return an object whose keys match the elements in the array of values.\n                    The corresponding values that are assigned to the keys will be arrays consisting of outputs from the array of callbacks,\n                    where the input to each callback is the key.",
             "fullFile": "/Users/derese/Documents/webprojects/study/javaScriptTheHardParts/test/test.js",
             "file": "/test/test.js",
@@ -498,7 +498,7 @@
                 "title": "MultipMap(['catfood', 'glue', 'beer'], [function(str) { return str.toUpperCase(); }, function(str) { return str[0].toUpperCase() + str.slice(1).toLowerCase(); }, function(str) { return str + str; }])\n                        should return { catfood: ['CATFOOD', 'Catfood', 'catfoodcatfood'], glue: ['GLUE', 'Glue', 'glueglue'], beer: ['BEER', 'Beer', 'beerbeer'] }",
                 "fullTitle": "CallBack and High Order Functions Extension 6: a function multiMap  will accept two arrays: an array of values and an array of callbacks.\n                    multiMap will return an object whose keys match the elements in the array of values.\n                    The corresponding values that are assigned to the keys will be arrays consisting of outputs from the array of callbacks,\n                    where the input to each callback is the key. MultipMap(['catfood', 'glue', 'beer'], [function(str) { return str.toUpperCase(); }, function(str) { return str[0].toUpperCase() + str.slice(1).toLowerCase(); }, function(str) { return str + str; }])\n                        should return { catfood: ['CATFOOD', 'Catfood', 'catfoodcatfood'], glue: ['GLUE', 'Glue', 'glueglue'], beer: ['BEER', 'Beer', 'beerbeer'] }",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -507,19 +507,19 @@
                 "code": "//ARRANGE\nvar arr1 = ['catfood', 'glue', 'beer'];\nvar arr2 = [function (str) {\n  return str.toUpperCase();\n}, function (str) {\n  return str[0].toUpperCase() + str.slice(1).toLowerCase();\n}, function (str) {\n  return str + str;\n}]; //ACT\nvar result = (0, _callBackAndHighOrderFunctions.multiMap)(arr1, arr2); //ASSERT\nexpect(result).to.eql({\n  catfood: ['CATFOOD', 'Catfood', 'catfoodcatfood'],\n  glue: ['GLUE', 'Glue', 'glueglue'],\n  beer: ['BEER', 'Beer', 'beerbeer']\n});",
                 "err": {},
                 "isRoot": false,
-                "uuid": "838ec76e-3cf5-4641-a9a6-1c95971c1c34",
+                "uuid": "5dd7961c-83a1-4c75-9af0-73581e4ebe98",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "838ec76e-3cf5-4641-a9a6-1c95971c1c34"
+              "5dd7961c-83a1-4c75-9af0-73581e4ebe98"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 1,
+            "duration": 0,
             "root": false,
             "rootEmpty": false,
             "_timeout": 2000
@@ -535,25 +535,57 @@
         "_timeout": 2000
       },
       {
-        "uuid": "29f38701-e739-4a2c-b5a1-9c4617559d56",
+        "uuid": "8065c2a9-ed8c-4373-a117-0fc5caf78ca2",
         "title": "Clousers, Scope and Execution Contenxt",
         "fullFile": "/Users/derese/Documents/webprojects/study/javaScriptTheHardParts/test/test.js",
         "file": "/test/test.js",
-        "beforeHooks": [],
-        "afterHooks": [],
+        "beforeHooks": [
+          {
+            "title": "\"before each\" hook",
+            "fullTitle": "Clousers, Scope and Execution Contenxt \"before each\" hook",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "this.spy = sinon.spy(console, 'log');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "0ba90a9a-819a-414a-b524-0a48ca62820e",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [
+          {
+            "title": "\"after each\" hook",
+            "fullTitle": "Clousers, Scope and Execution Contenxt \"after each\" hook",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "this.spy.restore();",
+            "err": {},
+            "isRoot": false,
+            "uuid": "92457807-58f0-4c86-b94b-7cd1e9f10643",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
         "tests": [],
         "suites": [
           {
-            "uuid": "9cd65a3b-47f5-4c6c-8107-6c488419b65f",
-            "title": "Create a function createFunction that creates and returns a function.\n              When that created function is called, it should print \"hello\".",
+            "uuid": "82ccf962-bc2a-4c1e-b040-ff5f8236c6e9",
+            "title": "Challagnge 1: Create a function createFunction that creates and returns a function.\n              When that created function is called, it should print \"hello\".",
             "fullFile": "/Users/derese/Documents/webprojects/study/javaScriptTheHardParts/test/test.js",
             "file": "/test/test.js",
             "beforeHooks": [],
             "afterHooks": [],
             "tests": [
               {
-                "title": "prints hello",
-                "fullTitle": "Clousers, Scope and Execution Contenxt Create a function createFunction that creates and returns a function.\n              When that created function is called, it should print \"hello\". prints hello",
+                "title": "createFunction when called shouldprints hello",
+                "fullTitle": "Clousers, Scope and Execution Contenxt Challagnge 1: Create a function createFunction that creates and returns a function.\n              When that created function is called, it should print \"hello\". createFunction when called shouldprints hello",
                 "timedOut": false,
                 "duration": 0,
                 "state": "passed",
@@ -561,17 +593,207 @@
                 "pass": true,
                 "fail": false,
                 "pending": false,
-                "code": "//ARRANGE\nvar fun = (0, _ClosuresScopeAndExecutionContext.createFunction)(); //ACT\nexpect(fun()).to.eql('hello'); //ASERT",
+                "code": "//ARRANGE\n(0, _ClosuresScopeAndExecutionContext.createFunction)(); //ACT & //ASERT\nexpect(this.spy).to.have.been.calledWith(\"hello\");",
                 "err": {},
                 "isRoot": false,
-                "uuid": "5577114a-e127-4e7a-9f49-4e2d0bdb1d28",
+                "uuid": "8b61d58d-20d4-4c6b-a4f6-9afbbc42d8d6",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "5577114a-e127-4e7a-9f49-4e2d0bdb1d28"
+              "8b61d58d-20d4-4c6b-a4f6-9afbbc42d8d6"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 0,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          },
+          {
+            "uuid": "6afe22a4-02de-4368-ba79-675d5ad464d9",
+            "title": "Challange 2: Create a function createFunctionPrinter that accepts\n            one input and returns a function. When that created function is called,\n            it should print out the input that was used when the function was created.",
+            "fullFile": "/Users/derese/Documents/webprojects/study/javaScriptTheHardParts/test/test.js",
+            "file": "/test/test.js",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "createFunctionPrinter('sample') should print sample",
+                "fullTitle": "Clousers, Scope and Execution Contenxt Challange 2: Create a function createFunctionPrinter that accepts\n            one input and returns a function. When that created function is called,\n            it should print out the input that was used when the function was created. createFunctionPrinter('sample') should print sample",
+                "timedOut": false,
+                "duration": 1,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "//ARRANGE\nvar fn = (0, _ClosuresScopeAndExecutionContext.createFunctionPrinter)('sample'); //ACT\nfn(); //ASSERT\nexpect(this.spy).to.have.been.calledWith('sample');",
+                "err": {},
+                "isRoot": false,
+                "uuid": "cf8f96e9-7c08-4f35-9dae-23ffa31a6e24",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "cf8f96e9-7c08-4f35-9dae-23ffa31a6e24"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 1,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          },
+          {
+            "uuid": "874edc08-22c0-4a80-ad48-fd52c7d9af1e",
+            "title": "Challange 3: Examine the code for the outer function. Notice that we are returning a function\n              and that function is using variables that are outside of its scope.\n              Uncomment those lines of code. Try to deduce the output before executing.",
+            "fullFile": "/Users/derese/Documents/webprojects/study/javaScriptTheHardParts/test/test.js",
+            "file": "/test/test.js",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": " calling willCounter(); willCounter(); willCounter(); jasCounter(); willCounter()\n                         should log out 1 ,2 ,3 ,1 and 4 ",
+                "fullTitle": "Clousers, Scope and Execution Contenxt Challange 3: Examine the code for the outer function. Notice that we are returning a function\n              and that function is using variables that are outside of its scope.\n              Uncomment those lines of code. Try to deduce the output before executing.  calling willCounter(); willCounter(); willCounter(); jasCounter(); willCounter()\n                         should log out 1 ,2 ,3 ,1 and 4 ",
+                "timedOut": false,
+                "duration": 1,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "//ARRANGE\nvar willCounter = (0, _ClosuresScopeAndExecutionContext.outer)();\nvar jasCounter = (0, _ClosuresScopeAndExecutionContext.outer)(); //ACT\nwillCounter();\nwillCounter();\nwillCounter();\njasCounter();\nwillCounter(); //ASSERT\nexpect(this.spy.args).to.be.eql([[1], [2], [3], [1], [4]]);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "05c93682-9a7b-4467-8400-f8da0c52ebd4",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "05c93682-9a7b-4467-8400-f8da0c52ebd4"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 1,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          },
+          {
+            "uuid": "5151fb8c-4788-473e-a8be-42e46ad960be",
+            "title": "challange 4:Now we are going to create a function addByX\n              that returns a function that will add an input by x.",
+            "fullFile": "/Users/derese/Documents/webprojects/study/javaScriptTheHardParts/test/test.js",
+            "file": "/test/test.js",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "addByTwo(1) , addByTwo(2) and addByTwo(3) should be equal 3,4,5 respectively",
+                "fullTitle": "Clousers, Scope and Execution Contenxt challange 4:Now we are going to create a function addByX\n              that returns a function that will add an input by x. addByTwo(1) , addByTwo(2) and addByTwo(3) should be equal 3,4,5 respectively",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "//ARRANGE\nvar addByTwo = (0, _ClosuresScopeAndExecutionContext.addByX)(2); //ACT & //ASSERT\nexpect(addByTwo(1)).to.be.eql(3);\nexpect(addByTwo(2)).to.be.eql(4);\nexpect(addByTwo(3)).to.be.eql(5);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "f8e09428-34a0-40df-8f7a-1d95a6efb1bc",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "f8e09428-34a0-40df-8f7a-1d95a6efb1bc"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 0,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          },
+          {
+            "uuid": "55d907e1-c711-458b-9c53-c1e20932ed20",
+            "title": "Challange 5: Write a function once that accepts a callback as input and\n              returns a function. When the returned function is called the first time,\n              it should call the callback and return that output.\n              If it is called any additional times,\n              instead of calling the callback again it will simply return the\n              output value from the first time it was called.",
+            "fullFile": "/Users/derese/Documents/webprojects/study/javaScriptTheHardParts/test/test.js",
+            "file": "/test/test.js",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "when once(addByTwo) is called the first time is should return 6\n                        after that when its called it should return 6",
+                "fullTitle": "Clousers, Scope and Execution Contenxt Challange 5: Write a function once that accepts a callback as input and\n              returns a function. When the returned function is called the first time,\n              it should call the callback and return that output.\n              If it is called any additional times,\n              instead of calling the callback again it will simply return the\n              output value from the first time it was called. when once(addByTwo) is called the first time is should return 6\n                        after that when its called it should return 6",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "//ARRAGE\nvar addByTwo = (0, _ClosuresScopeAndExecutionContext.addByX)(2);\nvar func = (0, _ClosuresScopeAndExecutionContext.once)(addByTwo); //ACT\nvar result1 = func(2);\nvar result2 = func(4);\nvar result3 = func(6); //ASSERT\nexpect(result1).to.eql(4);\nexpect(result2).to.eql(4);\nexpect(result3).to.eql(4);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "da619c66-66d1-4207-9ae3-fdf9a2084781",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "da619c66-66d1-4207-9ae3-fdf9a2084781"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 0,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          },
+          {
+            "uuid": "87298ae3-a1e7-4328-81c8-d9051386d5c9",
+            "title": "Challange 6 : Write a function after that takes\n              the number of times the callback needs to be called\n              before being executed as the first parameter and\n              the callback as the second parameter.",
+            "fullFile": "/Users/derese/Documents/webprojects/study/javaScriptTheHardParts/test/test.js",
+            "file": "/test/test.js",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "console logs hello after being called 3 times",
+                "fullTitle": "Clousers, Scope and Execution Contenxt Challange 6 : Write a function after that takes\n              the number of times the callback needs to be called\n              before being executed as the first parameter and\n              the callback as the second parameter. console logs hello after being called 3 times",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "//ARRANGE\nvar called = function called() {\n  console.log('hello');\n}; //ACT\n\nvar afterCalled = (0, _ClosuresScopeAndExecutionContext.after)(3, called);\nafterCalled();\nafterCalled();\nafterCalled(); //ASSERT\n// only once hello is passed to console log which is\nexpect(this.spy.args).to.be.eql([['hello']]);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "5c2483c9-29a9-432a-9f19-0e2b23ec6b00",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "5c2483c9-29a9-432a-9f19-0e2b23ec6b00"
             ],
             "failures": [],
             "pending": [],
